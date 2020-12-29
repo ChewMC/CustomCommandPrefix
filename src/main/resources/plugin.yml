@@ -1,0 +1,6 @@
+name: CustomCommandPrefix
+version: ${project.version}
+main: pw.chew.customcommandprefix.CustomCommandPrefix
+api-version: 1.16
+authors: [ Chewsterchew ]
+description: Customize the command prefix.
