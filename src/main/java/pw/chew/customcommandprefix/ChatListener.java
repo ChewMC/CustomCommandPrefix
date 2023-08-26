@@ -17,7 +17,7 @@ public class ChatListener implements Listener {
         String prefix = plugin.getConfig().getString("prefix");
         if (event.getMessage().startsWith(prefix)) {
             event.setCancelled(true);
-            Bukkit.getScheduler().runTask(plugin, () -> event.getPlayer().performCommand(event.getMessage().replace(prefix, "")));
+            Bukkit.getScheduler().runTask(plugin, () -> event.getPlayer().performCommand(event.getMessage().replaceFirst(prefix, "")));
         }
     }
 }
